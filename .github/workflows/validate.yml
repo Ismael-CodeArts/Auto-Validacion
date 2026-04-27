@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Checkout del código
-        uses: actions/checkout@v4
+       uses: actions/checkout@v4
+
       -name: Ejecutar ShellCheck
-        run: shellcheck script.sh
+       run: shellcheck Auto-Validacion/ script.sh
