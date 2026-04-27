@@ -1,0 +1,13 @@
+name: Tarea 4 Validación
+on:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Checkout del código
+       uses: actions/checkout@v4
+      -name: Ejecutar ShellCheck
+       run: shellcheck script.sh
