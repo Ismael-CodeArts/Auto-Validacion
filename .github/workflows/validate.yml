@@ -6,7 +6,6 @@ jobs:
   revisar:
     runs-on: ubuntu-latest # Usa una computadora de GitHub
     steps:
-      - name: Checkout del código
       - uses: actions/checkout@v4 # El robot baja tu código
       - name: Ejecutar ShellCheck
         run: shellcheck script.sh # El robot revisa si hay errores
