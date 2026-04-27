@@ -1,14 +1,12 @@
 name: Tarea 4 Validación
-on:
-  push:
-    branches: [main]
+
+on: [push] # Se activa cada vez que subes algo
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
+  revisar:
+    runs-on: ubuntu-latest # Usa una computadora de GitHub
     steps:
-       -name: Checkout del código
-        uses: actions/checkout@v4
-
-       -name: Ejecutar ShellCheck
-        run: shellcheck script.sh
+      - name: Checkout del código
+      - uses: actions/checkout@v4 # El robot baja tu código
+      - name: Ejecutar ShellCheck
+        run: shellcheck script.sh # El robot revisa si hay errores
