@@ -1,2 +1,3 @@
 Versión inicial del proyecto
 Añadido sistema de logs
+Autenticación implementada
